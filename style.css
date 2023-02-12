@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+}
+h1 {
+    color: rgb(75, 73, 73);
+    text-transform: uppercase;
+}
+.btn {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    background-color: grey;
+    border-radius: 10%;
+    border: 1px solid rgb(75, 73, 73);
+    box-shadow: 1px 1px 1px 1px rgba(75, 73, 73, 0.5);
+    font-size: 35px;
+    color: brown;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(50, 49, 49);
+}
