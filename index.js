@@ -1,35 +1,23 @@
 
- function inputNumberOne() {
+ function sum() {
      let x = prompt('Введите первое число');
-     return x;
- }
-
- function inputNumberTwo() {
      let y = prompt('Введите второе число');
-     return y;
-  }
+     alert (+x + +y);
+ }
+ 
+ function subtraction() {
+    let x = prompt('Введите первое число');
+    let y = prompt('Введите второе число');
+    alert (x - y);
+}
+function division() {
+    let x = prompt('Введите первое число');
+    let y = prompt('Введите второе число');
+    alert (x / y);
+}
 
- let a = Number(inputNumberOne());
-
-
- let b = Number(inputNumberTwo());
-
- function sum(a,b) {
-   return (a + b);
- } 
- alert (sum(a,b));
-
- function subtraction(a,b) {
-    return (a - b);
-  }
-  alert (subtraction(a,b));
-
- function division(a,b) {
-     return (a / b);
-  }
-  alert (division(a,b));
-
- function multiplication(a,b) {
-      return (a * b);
-   }
-  alert (multiplication(a,b));
+function multiplication() {
+    let x = prompt('Введите первое число');
+    let y = prompt('Введите второе число');
+    alert (x * y);
+}
