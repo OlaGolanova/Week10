@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,17 @@
     <button class="btn" onClick="division()">/</button>
     <button class="btn" onClick="multiplication()">x</button>
 </div>
+
+<section id="slider">
+  <h2 id="slider-title">Слайдер</h2>
+  <div class="slider-wrapper">
+    <button id="previous" class="slider-btn" onclick="showImagePrev()">Предыдущий</button>
+    <img src="slider/apple.jpg" id="slider-img" alt="Яблоко" width="500px">
+    <button id="next" class="slider-btn" onclick="showImageNext()">Следующий</button>
+  </div>
+</section>
+
+
     <script src="./index.js"></script>
 </body>
 </html>
