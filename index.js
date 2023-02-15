@@ -1,28 +1,38 @@
-// Калькулятор
+// Задания из видео с Алисой
+
+// Калькулятор 
 
 
- function sum() {
-     let x = prompt('Введите первое число');
-     let y = prompt('Введите второе число');
+  function sum() {
+    let x = prompt('Введите первое число');
+    let y = prompt('Введите второе число');
      alert (+x + +y);
  }
  
- function subtraction() {
+  function subtraction() {
+    let x = prompt('Введите первое число');
+     let y = prompt('Введите второе число');
+   alert (x - y);
+ }
+ function division() {
     let x = prompt('Введите первое число');
     let y = prompt('Введите второе число');
-    alert (x - y);
-}
-function division() {
-    let x = prompt('Введите первое число');
-    let y = prompt('Введите второе число');
-    alert (x / y);
-}
+     alert (x / y);
+ }
 
-function multiplication() {
-    let x = prompt('Введите первое число');
-    let y = prompt('Введите второе число');
+ function multiplication() {
+     let x = prompt('Введите первое число');
+     let y = prompt('Введите второе число');
     alert (x * y);
-}
+ }
+
+
+// 
+ let x = prompt('Как тебя зовут?');
+ alert('Привет, ' + x + '!');
+
+
+
 
 // Практическое задание
 
@@ -31,8 +41,9 @@ function showMassage() {
 }
 showMassage();  //Я учу JavaScript!
 
-//
 
+
+// Слайдер
 
 function showImagePrev() {
     let prev = document.getElementById('previous');
@@ -42,7 +53,7 @@ function showImagePrev() {
     previous.style.color = 'black';
     next.style.backgroundColor = 'black';
     next.style.color = 'antiquewhite';
-    image.src = 'slider/pineapple.jpg';
+    image.src = 'slider/apple.jpg';
 }
 
 
@@ -56,3 +67,32 @@ function showImageNext() {
     previous.style.color = 'antiquewhite';
     image.src = 'slider/pear.jpg';
 }
+
+
+// Задача со *
+
+const button = document.querySelector('.form-btn');
+const input = document.querySelector('input');
+
+button.onclick = function() {
+    let num = +input.value;
+    if (num % 4 == 0) {
+        if (num % 100 == 0) {
+            if (num % 400 == 0) {
+         
+                alert('Год является высокосным (366 дней)');
+            }
+            else {
+                alert('Год не высокосный (у него 365 дней)');
+            }
+        }
+        else {
+            alert('Год является высокосным (366 дней)');
+        }
+
+    }
+    else {
+        alert('Год не высокосный (у него 365 дней)');
+    }
+}
+
