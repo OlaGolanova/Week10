@@ -1,3 +1,5 @@
+'use strict';
+
 // Задания из видео с Алисой
 
 // Калькулятор 
@@ -44,11 +46,11 @@ showMassage();  //Я учу JavaScript!
 
 
 // Слайдер
-
-function showImagePrev() {
     let prev = document.getElementById('previous');
     let next = document.getElementById('next');
     let image = document.getElementById('slider-img');
+
+function showImagePrev() { 
     previous.style.backgroundColor = 'pink';
     previous.style.color = 'black';
     next.style.backgroundColor = 'black';
@@ -58,9 +60,6 @@ function showImagePrev() {
 
 
 function showImageNext() {
-    let prev = document.getElementById('previous');
-    let next = document.getElementById('next');
-    let image = document.getElementById('slider-img');
     next.style.backgroundColor = 'pink';
     next.style.color = 'black';
     previous.style.backgroundColor = 'black';
@@ -81,18 +80,18 @@ button.onclick = function() {
             if (num % 400 == 0) {
          
                 alert('Год является высокосным (366 дней)');
-            }
-            else {
+            } else {
                 alert('Год не высокосный (у него 365 дней)');
             }
-        }
-        else {
+        } else {
             alert('Год является высокосным (366 дней)');
         }
 
-    }
-    else {
+    } else {
         alert('Год не высокосный (у него 365 дней)');
     }
 }
+
+
+
 
